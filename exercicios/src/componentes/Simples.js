@@ -6,5 +6,5 @@ import Padrao from '../estilo/Padrao'
 //    return <Text>{props.texto}</Text>
 //}
 
-export default props => <Text style={[Padrao.ex]}>Arrow 1: {props.texto}</Text>
+export default props => <Text style={Padrao.ex}>Arrow 1: {props.texto}</Text>
 

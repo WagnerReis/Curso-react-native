@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
-import { View, Text, StyleSheet} from 'react-native'
-import Simples from './componentes/Simples'
+import React from 'react'
+import { View, StyleSheet} from 'react-native'
 
-export default class App extends Component {
+import Simples from './componentes/Simples'
+import ParImpar from './componentes/ParImpar'
+
+export default class App extends React.Component {
   render(){
       return (
-		  <View style={styles.container}>
-			  	<Simples texto='Flexível!!!!'/>
-		  </View>
+		  		<View style={styles.container}>
+			  			<Simples texto='Flexível!!!!'/>
+							<ParImpar numero={30} />
+		  		</View>
       )
   }
 }
@@ -17,5 +20,5 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: 'center',
 		alignItems: 'center',
-	},
+	}
 })

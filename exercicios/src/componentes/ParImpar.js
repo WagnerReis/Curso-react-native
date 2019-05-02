@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import Padrao from '../estilo/Padrao'
-import If from './if' 
+import If from './If' 
 
 function parOuImpar(num) {
  //   if(num % 2 == 0) {
@@ -22,3 +22,4 @@ export default props =>
             : <Text style={Padrao.ex}>Impar</Text>
         }*/}
     </View>
+

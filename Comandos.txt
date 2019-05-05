@@ -2,6 +2,6 @@ emulator -list-avds
 
 emulator -avd Nexus_5X_API_28_x86
 
-cd Desktop/Curso-react-native/exercicios
+cd Desktop/Curso-react-native/calculator
 
 react-native run-android

@@ -6,3 +6,6 @@ Nexus 5 API 28
 cd Desktop/Curso-react-native/tasks
 
 react-native run-android
+
+
+emulator -no-snapshot -avd Nexus_5X_API_28

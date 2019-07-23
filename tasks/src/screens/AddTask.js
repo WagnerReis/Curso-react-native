@@ -23,10 +23,10 @@ export default class AddTask extends Component {
     save = () => {
         if ( !this.state.desc.trim()) {
             Alert.alert('Dados inválidos', 'Informe uma descrição:')
-            return
+            return 
         }
         const data = { ...this.state }
-        data = this.props.onSave(data)
+        this.props.onSave(data)
         this.setState({ ...initialState })
     }
 
@@ -46,8 +46,8 @@ export default class AddTask extends Component {
 
     render() {
         let datePicker = null
-        if(Platform === 'ios') {
-            <DatePickerIOS mode='date' date={this.state.date}
+        if(Platform.OS === 'ios') {
+            datePicker = <DatePickerIOS mode='date' date={this.state.date}
                onDateChange={date => this.setState({ date })} />
         } else {
             datePicker = (
@@ -58,6 +58,7 @@ export default class AddTask extends Component {
                 </TouchableOpacity>
             )
         }
+
         return (
             <Modal onRequestClose={this.props.onCancel}
                 visible={this.props.isVisible}

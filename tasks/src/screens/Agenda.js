@@ -82,7 +82,7 @@ export default class Agenda extends Component {
         return (
             <View style={styles.container}>
                 <AddTask isVisible={this.state.showAddTask}
-                    onSave={this.addTask}
+                    onSave={this.AddTask}
                     onCancel={() => this.setState({ showAddTask: false })} />
                 <ImageBackground source={todayImage}
                     style={styles.background}>
